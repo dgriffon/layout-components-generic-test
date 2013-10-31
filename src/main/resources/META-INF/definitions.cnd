@@ -1,0 +1,12 @@
+<jlayout = 'http://www.jahia.org/jahia/layout/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jmixlayout = 'http://www.jahia.org/jahia/mix/layout/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[jmixlayout:genericLayoutComponents] > jmix:droppableContent, jmix:layoutComponentContent mixin
+
+[jlayout:section] > jnt:content, jmix:studioOnly, jmixlayout:genericLayoutComponents
+ - sectionElement (string, choicelist[resourceBundle]) = 'section' autocreated < 'section', 'article', 'header', 'footer', 'aside', 'nav', 'div'
+ - cssClassName (string)
+ + * (jmix:droppableContent) = jmix:droppableContent
+
