@@ -10,3 +10,16 @@
  - cssClassName (string)
  + * (jmix:droppableContent) = jmix:droppableContent
 
+[jlayout:navbar]  > jnt:content, jmixlayout:genericLayoutComponents, jmix:studioOnly, jmix:navMenuComponent, mix:title
+- logo (weakreference, picker[type='image']) < jnt:file
+
+[jlayout:navDropdown]  > jnt:content, jmixlayout:genericLayoutComponents, jmix:studioOnly, jmix:navMenuComponent, mix:title
+- baseLevel (long) mandatory
+
+[jlayout:navSiblings]  > jnt:content, jmixlayout:genericLayoutComponents, jmix:studioOnly, jmix:navMenuComponent, mix:title
+- baseLevel (long) mandatory
+
+[jlayout:menuLevel]  > jnt:content, jmixlayout:genericLayoutComponents, jmix:navMenuComponent, mix:title
+- baseLevel (long) mandatory
+
+[jlayout:navside]  > jnt:content, jmixlayout:genericLayoutComponents, jmix:studioOnly, jmix:navMenuComponent
